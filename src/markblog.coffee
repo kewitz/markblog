@@ -47,7 +47,7 @@ Markblog =
 
 	# Read Markdown file.
 	read: (file) ->
-		return file + " does not exists." unless fs.existsSync file
+		return file + " does not exist." unless fs.existsSync file
 		stat = fs.statSync file
 		return file + " is not a file." unless stat.isFile()
 		

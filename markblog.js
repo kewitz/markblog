@@ -55,7 +55,7 @@ Markblog = {
   read: function(file) {
     var md, post, stat;
     if (!fs.existsSync(file)) {
-      return file + " does not exists.";
+      return file + " does not exist.";
     }
     stat = fs.statSync(file);
     if (!stat.isFile()) {
