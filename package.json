@@ -1,0 +1,30 @@
+{
+  "name": "markblog",
+  "version": "0.0.1",
+  "description": "Simple markdown compiler for using in blogs.",
+  "author": "Leonardo Koch Kewitz <leokewitz@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leokewitz/markblog"
+  },
+  "main": "markblog.js",
+  "scripts": {
+    "prepublish": "coffee -cbo . ./src/markblog.coffee",
+    "compile": "coffee -cbo . ./src/markblog.coffee"
+  },
+  "devDependencies": {
+    "coffee-script": "*"
+  },
+  "dependencies": {
+    "markdown": "^0.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/leokewitz/markblog/issues"
+  },
+  "homepage": "https://github.com/leokewitz/markblog",
+  "keywords": [
+    "markdown",
+    "blog"
+  ]
+}
